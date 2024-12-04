@@ -1,11 +1,30 @@
-# Awesome Wireless Sensing Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Wireless Sensing Security
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A curated list of research works on wireless sensing security
+
+## Overview 
+
+This repository provides a comprehensive collection of research exploring the intersection of wireless sensing and security. Works are categorized based on how wireless signals function in security contexts:
+
+🎯 **Victims**
+- Research on attacks targeting wireless sensing systems and their defenses
+
+⚔️ **Weapons** 
+- Studies exploring wireless signals as attack vectors
+
+🛡️ **Shields**
+- Projects leveraging wireless sensing for security applications
+
+![](./figures/framework.png)
+
+---
 
 
-A curated list of wireless sensing security research papers. The papers are categorized based on the role of wireless signals in security scenarios.
+## Categories
 
-> Please see our paper for more details: A Survey of Wireless Sensing Security from a Role-Based View: Victim, Weapon, and Shield
-
-## 1. Wireless Systems as Victims
+### 1. Wireless Systems as Victims
 
 | Year | Journal/Conference | Title | Relevance Score |
 |------|--------------------|-------|-----------------|
@@ -87,7 +106,7 @@ A curated list of wireless sensing security research papers. The papers are cate
 | 2019 | NDSS | Adversarial Attacks Against Automatic Speech Recognition Systems via Psychoacoustic Hiding | 1 |
 | 2019 | CCS | Adversarial Sensor Attack on LiDAR-based Perception in Autonomous Driving | 1 |
 
-## 2. Wireless Signals as Attack Tools
+### 2. Wireless Signals as Attack Tools
 
 Papers exploring how wireless signals can be weaponized for attacks.
 
@@ -204,7 +223,7 @@ Papers exploring how wireless signals can be weaponized for attacks.
 | 2019 | CCS | Latent Backdoor Attacks on Deep Neural Networks | 1 |
 | 2019 | CCS | Seeing isn't Believing: Towards More Robust Adversarial Attack Against Real World Object Detectors | 1 |
 
-## 3. Wireless Signals as Security Guardians
+### 3. Wireless Signals as Security Guardians
 
 Papers on using wireless signals for security applications.
 
@@ -305,9 +324,37 @@ Papers on using wireless signals for security applications.
 | 2019 | Mobicom | XModal-ID: Using WiFi for Through-Wall Person Identification from Candidate Video Footage | 2 |
 | 2019 | CCS | DeMiCPU: Device Fingerprinting with Magnetic Signals Radiated by CPU | 2 |
 
-## Contributing
 
-Please feel free to open an issue or PR if you want to add more papers to this list.
+## Visualization and Analysis
+
+
+We provide both the raw data (CSV format) and visualization code for reproducing the analysis figures in our survey paper.
+
+
+![](./figures/image-1.png)
+
+- Navigate to the analysis directory:
+
+```
+cd analysis
+```
+
+- Run the MATLAB script:
+
+```matlab
+analysis.m
+```
+
+![](./figures/image-2.png)
+
+## Updates & Contact
+
+This is a continuously maintained collection of wireless sensing security research. Welcome expand this list by:
+- Opening an issue or pull request
+- Sending suggestions via email
+
+
+---
 
 ## Citation
 
