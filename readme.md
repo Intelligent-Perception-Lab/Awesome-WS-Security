@@ -9,13 +9,13 @@
 This repository provides a comprehensive collection of research exploring the intersection of wireless sensing and security. Works are categorized based on how wireless signals function in security contexts:
 
 🎯 **Victims**
-- Research on attacks targeting wireless sensing systems and their defenses
+- Research on attacks targeting wireless sensing systems
 
 ⚔️ **Weapons** 
 - Studies exploring wireless signals as attack vectors
 
 🛡️ **Shields**
-- Projects leveraging wireless sensing for security applications
+- Studies leveraging wireless sensing for security applications
 
 ![](./figures/framework.png)
 
