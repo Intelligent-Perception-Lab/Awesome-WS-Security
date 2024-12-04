@@ -361,7 +361,7 @@ This is a continuously maintained collection of wireless sensing security resear
 If you find this repository useful, please consider citing:
 ```bibtex
 @article{WirelessSensingSecurity2024,
-  title={A Comprehensive Survey on Wireless Sensing Security: A Role-based Perspective},
+  title={A Survey of Wireless Sensing Security from a Role-Based View: Victim, Weapon, and Shield},
   author={Ruixu Geng*, Jianyang Wang*, Yuqin Yuan, Fengquan Zhan, Tianyu Zhang, Rui Zhang, Pengcheng Huang, Dongheng Zhang, Jinbo Chen, Yang Hu, Yan Chen},
   journal={arxiv},
   year={2024}
