@@ -4,6 +4,11 @@
 
 > A curated list of research works on wireless sensing security
 
+## Updates
+
+- 20250115: Updated papers in *Mobicom'24, Sensys'24 and CCS'24*
+
+
 ## Overview 
 
 This repository provides a comprehensive collection of research exploring the intersection of wireless sensing and security. Works are categorized based on how wireless signals function in security contexts:
@@ -31,18 +36,22 @@ This repository provides a comprehensive collection of research exploring the in
 | 2024 | NDSS | MadRadar: A Black-Box Physical Layer Attack Framework on mmWave Automotive FMCW Radars | 4 |
 | 2024 | TDSC | Time to Think the Security of WiFi-Based Behavior Recognition Systems | 3 |
 | 2024 | TMC | SecureSense: Defending Adversarial Attack for Secure Device-Free Human Activity Recognition | 3 |
+| 2024 | CCS | RISiren: Wireless Sensing System Attacks via Metasurface | 3 |
 | 2024 | Security | A First Physical-World Trajectory Prediction Attack via LiDAR-induced Deceptions in Autonomous Driving | 2 |
 | 2024 | Security | AE-Morpher: Improve Physical Robustness of Adversarial Objects against LiDAR-based Detectors via Object Reconstruction | 2 |
 | 2024 | Security | Adversary is on the Road: Attacks on Visual SLAM using Unnoticeable Adversarial Patch | 2 |
 | 2024 | Security | pi-Jack: Physical-World Adversarial Attack on Monocular Depth Estimation with Perspective Hijacking | 2 |
 | 2024 | Mobicom | Malicious Attacks against Multi-Sensor Fusion in Autonomous Driving | 2 |
+| 2024 | Mobicom | WavePurifier: Purifying Audio Adversarial Examples via Hierarchical Diffusion Models | 2 |
 | 2024 | TIFS | Adversarial Examples Against WiFi Fingerprint-Based Localization in the Physical World | 2 |
 | 2024 | TIFS | Imperceptible and Robust Backdoor Attack in 3D Point Cloud | 2 |
 | 2024 | TIFS | PHY-Layer Authentication Exploiting Channel Sparsity in MmWave MIMO UAV-Ground Systems | 2 |
 | 2024 | TIFS | Reconfigurable Intelligent Surface-Assisted Key Generation for Millimeter-Wave Multi-User Systems | 2 |
 | 2024 | TIFS | iBA: Backdoor Attack on 3D Point Cloud via Reconstructing Itself. | 2 |
 | 2024 | TMC | Interference-Negligible Privacy-Preserved Shield for RF Sensing | 2 |
+| 2024 | CCS | BlueSWAT: A Lightweight State-Aware Security Framework for Bluetooth Low Energy | 2 |
 | 2024 | Infocom | Explanation-Guided Backdoor Attacks on Model-Agnostic RF Fingerprinting | 2 |
+| 2024 | CCS | UWBAD: Towards Effective and Imperceptible Jamming Attacks Against UWB Ranging Systems with COTS Chips | 2 |
 | 2024 | NDSS | Invisible Reflections: Leveraging Infrared Laser Reflections to Target Traffic Sign Perception | 1 |
 | 2024 | Mobisys | F2Key: Dynamically Converting Your Face into a Private Key Based on COTS Headphones for Reliable Voice Interaction | 1 |
 | 2024 | Mobisys | Invisible Optical Adversarial Stripes on Traffic Sign against Autonomous Vehicles | 1 |
@@ -50,6 +59,8 @@ This repository provides a comprehensive collection of research exploring the in
 | 2024 | TIFS | Stealthy and Effective Physical Adversarial Attacks in Autonomous Driving | 1 |
 | 2024 | TMC | PhyFinAtt: An Undetectable Attack Framework Against PHY Layer Fingerprint-Based WiFi Authentication | 1 |
 | 2024 | TMC | UAV-Enabled Secure Communications via Collaborative Beamforming With Imperfect Eavesdropper Information | 1 |
+| 2024 | CCS | PhyScout: Detecting Sensor Spoofing Attacks via Spatio-temporal Consistency | 1 |
+| 2024 | CCS | SpecGuard: Specification Aware Recovery for Robotic Autonomous Vehicles from Physical Attacks | 1 |
 | 2023 | S&P | mmSpoof: Resilient Spoofing of Automotive Millimeter-wave Radars using Reflect Array | 4 |
 | 2023 | NDSS | MetaWave: Attacking mmWave Sensing with Meta-material-enhanced Tags | 4 |
 | 2023 | CCS | TileMask: A Passive-Reflection-based Attack against mmWave Radar Object Detection in Autonomous Driving | 4 |
@@ -117,6 +128,8 @@ Papers exploring how wireless signals can be weaponized for attacks.
 | 2024 | Infocom | mmEar: Push the Limit of COTS mmWave Eavesdropping on Headphones | 3 |
 | 2024 | Security | AE-Morpher: Improve Physical Robustness of Adversarial Objects against LiDAR-based Detectors via Object Reconstruction | 2 |
 | 2024 | Mobicom | Beamforming made Malicious: Manipulating Wi-Fi Traffic via Beamforming Feedback Forgery | 2 |
+| 2024 | Mobicom | SURF: Eavesdropping on Underwater Communications from the Air | 2 |
+| 2024 | Sensys | EMTrig: Physical Adversarial Examples Triggered by Electromagnetic Injection towards LiDAR Perception | 2 |
 | 2024 | TDSC | Air-Gap Electromagnetic Covert Channel | 2 |
 | 2024 | TDSC | Practical EMI Attacks on Smartphones With Users¡¯ Commands Cancelled | 2 |
 | 2024 | TDSC | Privacy Leakage in Wireless Charging | 2 |
@@ -125,6 +138,7 @@ Papers exploring how wireless signals can be weaponized for attacks.
 | 2024 | TMC | MagView++: Data Exfiltration via CPU Magnetic Signals Under Video Decoding | 2 |
 | 2024 | TMC | MuKI-Fi: Multi-Person Keystroke Inference With BFI-Enabled Wi-Fi Sensing | 2 |
 | 2024 | TMC | WiFiLeaks: Exposing Stationary Human Presence Through a Wall With Commodity Mobile Devices | 2 |
+| 2024 | CCS | RefleXnoop: Passwords Snooping on NLoS Laptops Leveraging Screen-Induced Sound Reflection | 2 |
 | 2024 | Infocom | Silent Thief: Password Eavesdropping Leveraging Wi-Fi Beamforming Feedback from POS Terminal | 2 |
 | 2024 | Security | Devil in the Room: Triggering Audio Backdoors in the Physical World | 1 |
 | 2024 | Security | Eye of Sauron: Long-Range Hidden Spy Camera Detection and Positioning with Inbuilt Memory EM Radiation | 1 |
@@ -137,6 +151,7 @@ Papers exploring how wireless signals can be weaponized for attacks.
 | 2024 | NDSS | LiDAR Spoofing Meets the New-Gen: Capability Improvements, Broken Assumptions, and New Attack Strategies | 1 |
 | 2024 | NDSS | PrintListener: Uncovering the Vulnerability of Fingerprint Authentication via the Finger Friction Sound | 1 |
 | 2024 | Mobicom | EVLeSen: In-Vehicle Sensing with EV-Leaked Signal | 1 |
+| 2024 | Mobicom | IMS is Not That Secure on Your 5G/4G Phones | 1 |
 | 2024 | Mobicom | Inaudible Backdoor Attack via Stealthy Frequency Trigger Injection in Audio Spectrogram | 1 |
 | 2024 | Mobisys | Your Mic Leaks Too Much: A Double-Edged Sword for Security | 1 |
 | 2024 | TDSC | Analyzing and Defending GhostTouch Attack Against Capacitive Touchscreens | 1 |
@@ -229,9 +244,17 @@ Papers on using wireless signals for security applications.
 
 | Year | Journal/Conference | Title | Relevance Score |
 |------|--------------------|-------|-----------------|
+| 2024 | Sensys | ASLiquid: Non-Intrusive Liquid Counterfeit Identification with Your Earphones | 3 |
+| 2024 | Sensys | Behaviors Speak More: Achieving User Authentication Leveraging Facial Activities via mmWave Sensing | 3 |
+| 2024 | Sensys | Mission: mmWave Radar Person Identification with RGB Cameras | 3 |
 | 2024 | IMWUT | RDGait: A mmWave Based Gait User Recognition System for Complex Indoor Environments Using Single-chip Radar | 3 |
 | 2024 | S&P | Guessing on Dominant Paths: Understanding the Limitation of Wireless Authentication Using Channel State Information | 2 |
 | 2024 | Security | Lumos: Identifying and Localizing Diverse Hidden IoT Devices in an Unfamiliar Environment | 2 |
+| 2024 | Sensys | An Online Defense against Object-based LiDAR Attacks in Autonomous Driving | 2 |
+| 2024 | Sensys | BSENSE: In-vehicle Child Detection and Vital Sign Monitoring with a Single mmWave Radar and Synthetic Reflectors | 2 |
+| 2024 | Sensys | Eternity in a Second: Quick-pass Continuous Authentication Using Out-ear Microphones | 2 |
+| 2024 | Sensys | Locating Your Smart Devices with a Single Speaker | 2 |
+| 2024 | Sensys | PiezoBud: A Piezo-Aided Secure Earbud with Practical Speaker Authentication | 2 |
 | 2024 | TIFS | DCS-Gait: A Class-Level Domain Adaptation Approach for Cross-Scene and Cross-State Gait Recognition Using Wi-Fi CSI | 2 |
 | 2024 | TIFS | Dr. Defender: Proactive Detection of Autopilot Drones Based on CSI. | 2 |
 | 2024 | TDSC | BIOWISH: Biometric Recognition Using Wearable Inertial Sensors Detecting Heart Activity | 2 |
@@ -246,7 +269,11 @@ Papers on using wireless signals for security applications.
 | 2024 | TMC | Unsupervised Sensor-Based Continuous Authentication With Low-Rank Transformer Using Learning-to-Rank Algorithms | 2 |
 | 2024 | TMC | ZITA: Zero-Interaction Two-Factor Authentication Using Contact Traces and In-Band Proximity Verification | 2 |
 | 2024 | Infocom | AGR: Acoustic Gait Recognition Using Interpretable Micro-Range Profile | 2 |
+| 2024 | CCS | GPSBuster: Busting out Hidden GPS Trackers via MSoC Electromagnetic Radiations | 2 |
+| 2024 | CCS | SAFARI: Speech-Associated Facial Authentication for AR/VR Settings via Robust VIbration Signatures | 2 |
+| 2024 | Mobicom | Foes or Friends: Embracing Ground Effect for Edge Detection on Lightweight Drones | 1 |
 | 2024 | Mobisys | Face Recognition In Harsh Conditions: An Acoustic Based Approach | 1 |
+| 2024 | Sensys | MetaFL: Privacy-preserving User Authentication in Virtual Reality with Federated Learning | 1 |
 | 2024 | TIFS | Dual-Adversarial Representation Disentanglement for Visible Infrared Person Re-Identification | 1 |
 | 2024 | TIFS | RFTrack: Stealthy Location Inference and Tracking Attack on Wi-Fi Devices | 1 |
 | 2024 | TDSC | CyberSpec: Behavioral Fingerprinting for Intelligent Attacks Detection on Crowdsensing Spectrum Sensors | 1 |
