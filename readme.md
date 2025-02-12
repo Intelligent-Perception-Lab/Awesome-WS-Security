@@ -1,3 +1,6 @@
+<div style="display: flex; align-items: flex-start; gap: 2em;">
+<div>
+
 # Awesome Wireless Sensing Security
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -6,10 +9,17 @@
 
 > For detailed information, please refer to our survey paper: [A Survey of Wireless Sensing Security from a Role-Based View: Victim, Weapon, and Shield](https://arxiv.org/abs/2412.03064)
 
+</div>
+
+<div style="flex-shrink: 0; margin-top: 1em;">
+<img src="./figures/image-1.png" alt="Wireless Sensing Security in Different Years" style="width: 300px;">
+</div>
+</div>
+
 ## Updates
 
 - 20250212: Significantly expanded pre-2019 literature coverage
-- 
+  
 - 20250115: Updated papers in *Mobicom'24, Sensys'24 and CCS'24*
 
 
