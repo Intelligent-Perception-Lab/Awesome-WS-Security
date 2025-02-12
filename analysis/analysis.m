@@ -23,7 +23,7 @@ scores = unique(data.("Relevance Score"));
 years = unique(data.Year);
 
 % Keep data from 2021 onwards
-years = years(years >= 2021);
+years = years(years >= 2005);
 
 % 1. Trend Analysis: Paper count trends by category per year (bar + line)
 figure('Units', 'centimeters', 'Position', [1, 1, 12, 8]);
