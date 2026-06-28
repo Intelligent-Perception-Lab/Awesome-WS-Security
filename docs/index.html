@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireless Sensing Security — A Role-Based View | Victim · Weapon · Shield</title>
+<meta name="description" content="The first comprehensive survey of wireless sensing security (2004–2025). A role-based framework organizing 430+ works by whether wireless signals act as Victims, Weapons, or Shields, unified under a single sensing model.">
+<meta name="author" content="Ruixu Geng, Jianyang Wang, et al. — Intelligent Perception Lab, USTC">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Survey of Wireless Sensing Security From a Role-Based View">
+<meta property="og:description" content="Victim · Weapon · Shield — a unified, role-based map of wireless sensing security across 430+ papers (2004–2025).">
+<meta property="og:image" content="figures/framework.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M2 12h3l2-7 4 18 3-11 2 5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">WS&#8209;Security</span>
+    </a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#model">Model</a>
+      <a href="#framework">Framework</a>
+      <a href="#taxonomy">Taxonomy</a>
+      <a href="#explorer">Explorer</a>
+      <a href="#trends">Trends</a>
+      <a href="#future">Future</a>
+      <a href="#cite">Cite</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="https://arxiv.org/abs/2412.03064" target="_blank" rel="noopener">arXiv</a>
+      <a class="btn btn-dark" href="https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="venue-badge">IEEE Communications Surveys &amp; Tutorials · 2026</div>
+    <h1 class="hero-title">A Survey of Wireless Sensing Security<br><span class="hero-title-sub">From a Role-Based View</span></h1>
+    <p class="hero-tagline">When wireless signals can be <span class="kw kw-victim">Victims</span>, <span class="kw kw-weapon">Weapons</span>, and <span class="kw kw-shield">Shields</span> — a single, unified map of an entire security field.</p>
+
+    <div class="authors">
+      <p class="author-line">
+        Ruixu Geng<sup>*</sup>, Jianyang Wang<sup>*</sup>, Yuqin Yuan, Fengquan Zhan, Tianyu Zhang, Rui Zhang,
+        Pengcheng Huang, Dongheng Zhang, Jinbo Chen, Yang Hu, Yan Chen<sup>&#9993;</sup>
+      </p>
+      <p class="affil">School of Cyber Science and Technology, University of Science and Technology of China (USTC)</p>
+      <p class="affil-note"><sup>*</sup> Equal contribution &nbsp;·&nbsp; <sup>&#9993;</sup> Corresponding author</p>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://arxiv.org/abs/2412.03064" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5L14 3.5z"/></svg>
+        Paper / arXiv
+      </a>
+      <a class="btn btn-line" href="https://doi.org/10.1109/COMST.2025.3597716" target="_blank" rel="noopener">IEEE Xplore · DOI</a>
+      <a class="btn btn-line" href="https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security" target="_blank" rel="noopener">Awesome List &amp; Code</a>
+      <a class="btn btn-line" href="#cite">BibTeX</a>
+    </div>
+
+    <ul class="hero-stats">
+      <li><span class="stat-num" data-count="430">430+</span><span class="stat-label">Papers surveyed</span></li>
+      <li><span class="stat-num">2004&ndash;2025</span><span class="stat-label">Two decades</span></li>
+      <li><span class="stat-num">3</span><span class="stat-label">Signal roles</span></li>
+      <li><span class="stat-num">15+</span><span class="stat-label">Top venues</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ABSTRACT ============ -->
+<section class="section section-abstract" id="abstract">
+  <div class="container narrow">
+    <div class="eyebrow">Abstract</div>
+    <p class="lead">
+      Wireless sensing — using <strong>WiFi, mmWave radar, acoustic, RFID and other signals</strong> to perceive the physical
+      world — has become ubiquitous, yet its security has remained fragmented and under-explored. This survey presents
+      the <strong>first comprehensive review of wireless sensing security from 2004 to early 2025</strong>.
+    </p>
+    <p>
+      We extend the classical sensing model into a <strong>unified security perspective</strong>, which naturally yields the
+      paper's central contribution: a <strong>role-based classification</strong> that organizes research by the role wireless
+      signals play — <span class="kw kw-victim">Victims</span> of attacks, <span class="kw kw-weapon">Weapons</span> for
+      attacks, or <span class="kw kw-shield">Shields</span> for security applications. Through a systematic analysis of
+      <strong>over 430 publications</strong> collected in the open <em>Awesome-WS-Security</em> database, we map the landscape,
+      surface the field's defining challenges, and chart promising directions: multi-physics modeling, AI-driven intelligent
+      security, and proactive defense.
+    </p>
+    <div class="contrib-grid">
+      <div class="contrib"><span class="contrib-no">01</span><p>The <strong>first systematic review</strong> of wireless sensing security, covering vulnerabilities and protections together.</p></div>
+      <div class="contrib"><span class="contrib-no">02</span><p>A <strong>role-based framework</strong> grounded in a unified signal model — intuitive, comprehensive, with clear boundaries.</p></div>
+      <div class="contrib"><span class="contrib-no">03</span><p>An <strong>open, living database</strong> of 430+ labeled papers with reproducible statistical analysis.</p></div>
+      <div class="contrib"><span class="contrib-no">04</span><p>A synthesis of <strong>challenges &amp; future directions</strong> spanning attack evolution and defense innovation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNIFIED MODEL ============ -->
+<section class="section section-model" id="model">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">The Foundation</div>
+      <h2>One equation to read the whole field</h2>
+      <p class="section-sub">
+        Every wireless sensing system — and every attack or defense against it — can be expressed through a single
+        unified model. Security is then simply a question of <em>which component of the signal chain is being exploited
+        or protected.</em>
+      </p>
+    </div>
+
+    <div class="equation-card">
+      <div class="equation" role="img" aria-label="y of t equals the sum over i of h sub i of x of t and Theta sub i, plus n of t">
+        <span class="eq-y" data-comp="y">y(t)</span>
+        <span class="eq-op">=</span>
+        <span class="eq-sum">&#8721;<sub>i</sub></span>
+        <span class="eq-h" data-comp="h">h<sub>i</sub></span>
+        <span class="eq-paren">(</span>
+        <span class="eq-x" data-comp="x">x(t)</span>
+        <span class="eq-comma">,</span>
+        <span class="eq-theta" data-comp="theta">&Theta;<sub>i</sub></span>
+        <span class="eq-paren">)</span>
+        <span class="eq-op">+</span>
+        <span class="eq-n" data-comp="n">n(t)</span>
+      </div>
+      <p class="equation-caption">The received baseband signal <em>y(t)</em> is the sum of channel transformations of the transmitted signal, plus noise. Sensing means estimating the parameters &Theta;<sub>i</sub>. <strong>Tap a component below.</strong></p>
+
+      <div class="comp-grid">
+        <button class="comp-chip" data-comp="x" type="button">
+          <span class="comp-sym">x(t)</span><span class="comp-name">Source</span>
+        </button>
+        <button class="comp-chip" data-comp="h" type="button">
+          <span class="comp-sym">h<sub>i</sub></span><span class="comp-name">Channel</span>
+        </button>
+        <button class="comp-chip" data-comp="theta" type="button">
+          <span class="comp-sym">&Theta;<sub>i</sub></span><span class="comp-name">Target params</span>
+        </button>
+        <button class="comp-chip" data-comp="n" type="button">
+          <span class="comp-sym">n(t)</span><span class="comp-name">Noise</span>
+        </button>
+        <button class="comp-chip" data-comp="y" type="button">
+          <span class="comp-sym">y(t)</span><span class="comp-name">Measurement</span>
+        </button>
+      </div>
+
+      <div class="comp-detail" id="compDetail" aria-live="polite">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROLE FRAMEWORK ============ -->
+<section class="section section-framework" id="framework">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">The Role-Based Framework</div>
+      <h2>Three roles a wireless signal can play</h2>
+      <p class="section-sub">
+        Device-based or threat-based taxonomies fracture the field. The role of the signal — target, vector, or tool —
+        is intuitive, captures fundamental relationships, and gives every work a clear home.
+      </p>
+    </div>
+
+    <div class="roles">
+      <article class="role-card role-victim" id="victims">
+        <div class="role-top">
+          <div class="role-icon" aria-hidden="true">&#127919;</div>
+          <div class="role-meta"><span class="role-tag">Category I</span><h3>Victims</h3></div>
+        </div>
+        <p class="role-def">Wireless sensing systems are the <strong>attack targets</strong>. Adversaries disrupt parameter estimation by manipulating the source, channel, or target — and defenders harden system resilience.</p>
+        <div class="role-formula">Corrupt the estimation of &Theta;<sub>i</sub> from y(t)</div>
+        <ul class="role-list">
+          <li><strong>Attacks on targets</strong> — static / dynamic modulation, adversarial examples</li>
+          <li><strong>Attacks on sources</strong> — jamming, spoofing, adversarial signals</li>
+          <li><strong>Attacks on channels</strong> — communication &amp; sensing-channel manipulation</li>
+          <li><strong>Defenses</strong> — robustness, detection, physical-layer protection</li>
+        </ul>
+        <p class="role-eg">e.g. spoofing mmWave radar in autonomous driving · adversarial attacks on RF sensing</p>
+        <button class="role-explore" data-cat="1" type="button">Explore 87 papers &rarr;</button>
+      </article>
+
+      <article class="role-card role-weapon" id="weapons">
+        <div class="role-top">
+          <div class="role-icon" aria-hidden="true">&#9876;&#65039;</div>
+          <div class="role-meta"><span class="role-tag">Category II</span><h3>Weapons</h3></div>
+        </div>
+        <p class="role-def">Wireless signals become the <strong>attack tool</strong> against other systems — eavesdropping, side channels, and interference that steal information or cause malfunction.</p>
+        <div class="role-formula">Maliciously estimate sensitive &Theta;<sub>i</sub> from y(t)</div>
+        <ul class="role-list">
+          <li><strong>Active attacks</strong> — vibration eavesdropping, EMI injection, channel manipulation</li>
+          <li><strong>Passive attacks</strong> — device-leakage &amp; protocol-signal eavesdropping</li>
+          <li><strong>Defenses</strong> — physical-layer &amp; application-layer countermeasures</li>
+        </ul>
+        <p class="role-eg">e.g. mmWave acoustic eavesdropping · EM &amp; magnetic side channels · WiFi keystroke inference</p>
+        <button class="role-explore" data-cat="2" type="button">Explore 146 papers &rarr;</button>
+      </article>
+
+      <article class="role-card role-shield" id="shields">
+        <div class="role-top">
+          <div class="role-icon" aria-hidden="true">&#128737;&#65039;</div>
+          <div class="role-meta"><span class="role-tag">Category III</span><h3>Shields</h3></div>
+        </div>
+        <p class="role-def">Wireless signals serve as <strong>guardians</strong> — exploiting the uniqueness or controllability of the signal chain to deliver security and privacy.</p>
+        <div class="role-formula">Exploit uniqueness / control of &Theta;<sub>i</sub>, h<sub>i</sub>, n(t)</div>
+        <ul class="role-list">
+          <li><strong>Human identification &amp; authentication</strong> — gait, voice, face, vital signs</li>
+          <li><strong>Device authenticity</strong> — RF fingerprinting, media authenticity</li>
+          <li><strong>Privacy protection</strong> — threat detection &amp; data protection</li>
+        </ul>
+        <p class="role-eg">e.g. mmWave identity authentication · RF-based gait recognition · hidden-camera detection</p>
+        <button class="role-explore" data-cat="3" type="button">Explore 158 papers &rarr;</button>
+      </article>
+    </div>
+
+    <figure class="figure-wide">
+      <img src="figures/framework.png" alt="Diagram: wireless sensing security categorized into Victims, Weapons and Shields based on the role wireless signals play." loading="lazy">
+      <figcaption>Fig. 1 — Three protagonists. <em>Bob</em> the victim, <em>Eve</em> the attacker, and <em>Walter</em> the guardian frame the role wireless signals play across the security landscape.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ TAXONOMY ============ -->
+<section class="section section-taxonomy" id="taxonomy">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Taxonomy</div>
+      <h2>The full map, expandable</h2>
+      <p class="section-sub">The survey's structure as a navigable tree. Click any role to unfold its sub-areas and what each one studies.</p>
+    </div>
+
+    <div class="tax-cols" id="taxCols"><!-- filled by JS --></div>
+
+    <figure class="figure-wide figure-bordered">
+      <img src="figures/classification.png" alt="Overall structure of the survey paper, showing sections III–VIII and their subdivisions." loading="lazy">
+      <figcaption>Fig. 2 — Overall structure of the paper, from the unified preliminary through the three roles to challenges and future directions.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ EXPLORER ============ -->
+<section class="section section-explorer" id="explorer">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">The Complete Database</div>
+      <h2>The full repository, searchable</h2>
+      <p class="section-sub">This is the entire <em>Awesome-WS-Security</em> table — the same list curated in the GitHub repository — embedded here with rich filtering. Search by keyword, narrow by role, venue, year range and relevance, and sort any column. Relevance score 1&ndash;4 marks how directly a work addresses wireless sensing security.</p>
+    </div>
+
+    <div class="explorer">
+      <div class="explorer-controls">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm4.5 10.5L20 20"/></svg>
+          <input type="search" id="searchInput" placeholder="Search titles, e.g. mmWave, keystroke, gait, LiDAR…" aria-label="Search papers">
+        </div>
+        <div class="filter-row">
+          <div class="chips" id="catChips" role="group" aria-label="Filter by role">
+            <button class="chip chip-all active" data-cat="all" type="button">All roles <b id="cntAll">391</b></button>
+            <button class="chip chip-victim" data-cat="1" type="button">Victims <b id="cnt1">87</b></button>
+            <button class="chip chip-weapon" data-cat="2" type="button">Weapons <b id="cnt2">146</b></button>
+            <button class="chip chip-shield" data-cat="3" type="button">Shields <b id="cnt3">158</b></button>
+          </div>
+          <div class="selects">
+            <label class="sel"><span>Venue</span><select id="venueSelect"><option value="all">All venues</option></select></label>
+            <label class="sel"><span>Min. relevance</span>
+              <select id="relSelect">
+                <option value="1">1+ (all)</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4 (core)</option>
+              </select>
+            </label>
+            <label class="sel"><span>Sort</span>
+              <select id="sortSelect">
+                <option value="year-desc">Newest first</option>
+                <option value="year-asc">Oldest first</option>
+                <option value="rel-desc">Most relevant</option>
+                <option value="title-asc">Title A–Z</option>
+                <option value="venue-asc">Venue A–Z</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="year-filter">
+          <div class="year-ctrl">
+            <span class="yf-label">From <strong id="yearFromVal">2004</strong></span>
+            <input type="range" id="yearFrom" min="2004" max="2024" value="2004" step="1" aria-label="From year">
+          </div>
+          <div class="year-ctrl">
+            <span class="yf-label">To <strong id="yearToVal">2024</strong></span>
+            <input type="range" id="yearTo" min="2004" max="2024" value="2024" step="1" aria-label="To year">
+          </div>
+          <button class="reset-btn" id="resetBtn" type="button" title="Clear all filters">&#8635; Reset filters</button>
+        </div>
+      </div>
+
+      <div class="explorer-summary">
+        <div class="sum-counts" id="sumCounts" aria-live="polite"></div>
+        <div class="rel-legend" aria-hidden="true">
+          <span class="rl-label">Relevance</span>
+          <span class="rl"><i class="rel-badge rel-1">1</i>tangential</span>
+          <span class="rl"><i class="rel-badge rel-2">2</i>related</span>
+          <span class="rl"><i class="rel-badge rel-3">3</i>strong</span>
+          <span class="rl"><i class="rel-badge rel-4">4</i>core</span>
+        </div>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+
+      <div class="table-scroll">
+        <table class="paper-table" id="paperTable">
+          <thead>
+            <tr>
+              <th class="col-year sortable" data-sort="year">Year</th>
+              <th class="col-venue sortable" data-sort="venue">Venue</th>
+              <th class="col-title sortable" data-sort="title">Title</th>
+              <th class="col-role">Role</th>
+              <th class="col-rel sortable" data-sort="relevance">Rel.</th>
+            </tr>
+          </thead>
+          <tbody id="paperBody"></tbody>
+        </table>
+        <p class="empty-state" id="emptyState" hidden>No papers match these filters. Try widening your search.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRENDS ============ -->
+<section class="section section-trends" id="trends">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Statistical Analysis</div>
+      <h2>How the field has grown</h2>
+      <p class="section-sub">Built live from the database below. Wireless sensing security has shifted from a trickle of papers to an explosion after 2020 — across all three roles.</p>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-wide">
+        <h3>Publications per year, by role</h3>
+        <div class="chart-holder"><canvas id="chartYear"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Cumulative growth</h3>
+        <div class="chart-holder"><canvas id="chartCumulative"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Role composition</h3>
+        <div class="chart-holder"><canvas id="chartRole"></canvas></div>
+      </div>
+      <div class="chart-card chart-wide">
+        <h3>Top publication venues</h3>
+        <div class="chart-holder"><canvas id="chartVenue"></canvas></div>
+      </div>
+    </div>
+
+    <figure class="figure-wide figure-cloud">
+      <img src="figures/image-2.png" alt="Word cloud of recurring terms in wireless sensing security research: attack, authentication, system, wireless, adversarial, acoustic, mmWave…" loading="lazy">
+      <figcaption>Keyword landscape across the corpus — <em>attack</em>, <em>authentication</em>, and <em>system</em> dominate, reflecting the attack&ndash;defense duality at the field's core.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CHALLENGES & FUTURE ============ -->
+<section class="section section-future" id="future">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Challenges &amp; Future Directions</div>
+      <h2>Where the field must go next</h2>
+      <p class="section-sub">Three fundamental challenges stem from the physical&ndash;digital nature of wireless sensing — and point to four directions for the next decade.</p>
+    </div>
+
+    <div class="challenge-band">
+      <div class="challenge">
+        <span class="challenge-no">Challenge 1</span>
+        <h3>Physical&ndash;digital complexity</h3>
+        <p>Signal randomness, channel instability and interpretation difficulty make estimating <em>x(t), h<sub>i</sub>, &Theta;<sub>i</sub>, n(t)</em> hard — attackers hide in this uncertainty; guardians must see through it.</p>
+      </div>
+      <div class="challenge">
+        <span class="challenge-no">Challenge 2</span>
+        <h3>Lag of defense mechanisms</h3>
+        <p>Defenders react while attackers innovate. The linear defense cycle is too slow against novel manipulations of the sensing model — even adaptive defenses get bypassed.</p>
+      </div>
+      <div class="challenge">
+        <span class="challenge-no">Challenge 3</span>
+        <h3>Diverse, fast-moving scenarios</h3>
+        <p>From autonomous driving to smart homes to 5G/6G and the metaverse — each imposes different requirements, demanding security be designed in from the start.</p>
+      </div>
+    </div>
+
+    <div class="future-grid">
+      <article class="future-card">
+        <div class="future-icon">&#128300;</div>
+        <h3>Breakthroughs in sensing algorithms</h3>
+        <p>Cross-domain attack models and a <strong>unified multi-physics understanding</strong> — modeling how acoustic, mechanical and EM phenomena couple through &Theta;<sub>i</sub>.</p>
+      </article>
+      <article class="future-card">
+        <div class="future-icon">&#129504;</div>
+        <h3>Foundation-model security</h3>
+        <p><strong>AI-driven intelligent attack &amp; defense</strong> — robust representation learning, interpretability, channel prediction, and intelligent attack detection from y(t).</p>
+      </article>
+      <article class="future-card">
+        <div class="future-icon">&#128737;</div>
+        <h3>Stronger defense systems</h3>
+        <p>Multi-level <strong>collaborative defense-in-depth</strong>, AI-adaptive strategies, and <strong>proactive</strong> measures that make attacks inherently difficult via channel shaping.</p>
+      </article>
+      <article class="future-card">
+        <div class="future-icon">&#129728;</div>
+        <h3>New applications: Cognitive Security</h3>
+        <p>Non-contact, continuous sensing of physiological correlates of <strong>cognitive state</strong> — opening mental-health monitoring and trustworthiness assessment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITATION ============ -->
+<section class="section section-cite" id="cite">
+  <div class="container narrow">
+    <div class="section-head">
+      <div class="eyebrow">Citation</div>
+      <h2>Cite this survey</h2>
+      <p class="section-sub">If this work or the Awesome-WS-Security database is useful to your research, please cite:</p>
+    </div>
+    <div class="bibtex-card">
+      <button class="copy-btn" id="copyBib" type="button">Copy</button>
+      <pre id="bibtex">@article{WirelessSensingSecurity2025,
+  author  = {Geng, Ruixu and Wang, Jianyang and Yuan, Yuqin and Zhan, Fengquan
+             and Zhang, Tianyu and Zhang, Rui and Huang, Pengcheng
+             and Zhang, Dongheng and Chen, Jinbo and Hu, Yang and Chen, Yan},
+  journal = {IEEE Communications Surveys &amp; Tutorials},
+  title   = {A Survey of Wireless Sensing Security From a Role-Based View},
+  year    = {2025},
+  doi     = {10.1109/COMST.2025.3597716}
+}</pre>
+    </div>
+    <div class="cite-links">
+      <a class="btn btn-line" href="https://arxiv.org/abs/2412.03064" target="_blank" rel="noopener">arXiv:2412.03064</a>
+      <a class="btn btn-line" href="https://doi.org/10.1109/COMST.2025.3597716" target="_blank" rel="noopener">DOI:10.1109/COMST.2025.3597716</a>
+      <a class="btn btn-line" href="https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security" target="_blank" rel="noopener">Contribute on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Awesome&#8209;WS&#8209;Security</div>
+        <p class="footer-text">A continuously maintained collection of wireless sensing security research. Contributions via issues, pull requests, or email are welcome.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://arxiv.org/abs/2412.03064" target="_blank" rel="noopener">Paper (arXiv)</a>
+        <a href="https://doi.org/10.1109/COMST.2025.3597716" target="_blank" rel="noopener">IEEE Xplore</a>
+        <a href="https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security" target="_blank" rel="noopener">GitHub repository</a>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <p class="footer-text">Intelligent Perception Lab<br>University of Science and Technology of China</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Intelligent Perception Lab, USTC.</span>
+      <span>Project page for <em>A Survey of Wireless Sensing Security From a Role-Based View</em>.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="data/papers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

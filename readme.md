@@ -18,6 +18,8 @@
 
 ## Updates
 
+- 20260628: Project [website](https://intelligent-perception-lab.github.io/Awesome-WS-Security/) is officially online 🎉 — explore the unified model, role-based taxonomy, and the full interactive literature database
+
 - 20250212: Significantly expanded pre-2019 literature coverage
   
 - 20250115: Updated papers in *Mobicom'24, Sensys'24 and CCS'24*

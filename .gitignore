@@ -1,0 +1,10 @@
+# Do not publish the paper PDF to the repository (use the arXiv / IEEE links instead)
+A_Survey_of_Wireless_Sensing_Security_From_a_Role-Based_View.pdf
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
