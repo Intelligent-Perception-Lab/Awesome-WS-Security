@@ -1,19 +1,26 @@
-<div style="display: flex; align-items: flex-start; gap: 2em;">
-<div>
+<div align="center">
 
-# Awesome Wireless Sensing Security
+# 📡 Awesome Wireless Sensing Security
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![arXiv](https://img.shields.io/badge/arXiv-2412.03064-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.03064)
+[![IEEE COMST](https://img.shields.io/badge/IEEE-COMST_2026-00629b?logo=ieee&logoColor=white)](https://doi.org/10.1109/COMST.2025.3597716)
+[![Project Page](https://img.shields.io/badge/Project_Page-Online-2f6fb3?logo=githubpages&logoColor=white)](https://intelligent-perception-lab.github.io/Awesome-WS-Security/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2f8f5b)](https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security/pulls)
+[![Stars](https://img.shields.io/github/stars/Intelligent-Perception-Lab/Awesome-WS-Security?style=social)](https://github.com/Intelligent-Perception-Lab/Awesome-WS-Security/stargazers)
 
-> A curated list of research works on wireless sensing security
+<p align="center">
+  <b>A curated list of research on wireless sensing security</b> — organized by the role<br>
+  wireless signals play: &nbsp;🎯&nbsp;<b>Victim</b>, &nbsp;⚔️&nbsp;<b>Weapon</b>, and &nbsp;🛡️&nbsp;<b>Shield</b>.
+</p>
 
-> For detailed information, please refer to our survey paper: [A Survey of Wireless Sensing Security from a Role-Based View: Victim, Weapon, and Shield](https://arxiv.org/abs/2412.03064)
+<p align="center">
+  📄&nbsp; Companion survey &nbsp;·&nbsp; <a href="https://arxiv.org/abs/2412.03064"><b>A Survey of Wireless Sensing Security From a Role-Based View</b></a><br>
+  <sub><i>IEEE Communications Surveys &amp; Tutorials</i>, 2026 &nbsp;·&nbsp; 430+ papers &nbsp;·&nbsp; 2004–2025 &nbsp;·&nbsp; <a href="https://intelligent-perception-lab.github.io/Awesome-WS-Security/">Interactive project page&nbsp;↗</a></sub>
+</p>
 
-</div>
+<img src="./figures/image-1.png" alt="Wireless sensing security publications by year and role, 2004–2025" width="440">
 
-<div style="flex-shrink: 0; margin-top: 1em;">
-<img src="./figures/image-1.png" alt="Wireless Sensing Security in Different Years" style="width: 300px;">
-</div>
 </div>
 
 ## Updates
@@ -25,20 +32,26 @@
 - 20250115: Updated papers in *Mobicom'24, Sensys'24 and CCS'24*
 
 
-## Overview 
+## 📖 Overview
 
-This repository provides a comprehensive collection of research exploring the intersection of wireless sensing and security. Works are categorized based on how wireless signals function in security contexts:
+A comprehensive, continuously maintained collection of research at the intersection of **wireless sensing** and **security**. Unlike device- or threat-based taxonomies, every work here is organized by **the role the wireless signal plays** — the central, unifying idea of our survey:
 
-🎯 **Victims**
-- Research on attacks targeting wireless sensing systems
+<table>
+  <tr>
+    <td align="center" width="33%">🎯<br><b>Victims</b></td>
+    <td align="center" width="33%">⚔️<br><b>Weapons</b></td>
+    <td align="center" width="33%">🛡️<br><b>Shields</b></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><sub>Wireless sensing systems as <b>attack targets</b> — and the defenses that harden them.</sub></td>
+    <td align="center" valign="top"><sub>Wireless signals <b>weaponized</b> as attack vectors — eavesdropping &amp; side channels.</sub></td>
+    <td align="center" valign="top"><sub>Wireless sensing <b>leveraged</b> for security &amp; privacy — authentication &amp; protection.</sub></td>
+  </tr>
+</table>
 
-⚔️ **Weapons** 
-- Studies exploring wireless signals as attack vectors
-
-🛡️ **Shields**
-- Studies leveraging wireless sensing for security applications
-
-![](./figures/framework.png)
+<div align="center">
+  <img src="./figures/framework.png" alt="Wireless sensing security categorized into Victims, Weapons, and Shields by the role wireless signals play" width="820">
+</div>
 
 ---
 
